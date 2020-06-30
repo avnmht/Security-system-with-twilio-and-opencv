@@ -15,7 +15,7 @@ while True:
             account_sid = 'Your_twilio_account_sid'
             auth_token = 'Your_twilio_auth_token'
             client = Client(account_sid, auth_token)
-            message = client.messages.create(from_='+15104220161',body='Somebody is trying to use your Laptop....Hurry Up!!!!',to='+917799549112')
+            message = client.messages.create(from_='Your_twilio_phone_number',body='Somebody is trying to use your Laptop....Hurry Up!!!!',to='Your_phone_number')
             print(message.sid)
             b=b-1
         for x,y,w,h in faces:
