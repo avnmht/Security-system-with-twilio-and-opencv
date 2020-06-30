@@ -12,8 +12,8 @@ while True:
     faces = face_cascade.detectMultiScale(gray, scaleFactor = 1.5, minNeighbors=5)
     if faces is not None:
         if b>0:
-            account_sid = 'ACbcea9c59574a613760875bfa4835cb79'
-            auth_token = 'e2bb8c32fda4c3ead9440e2003643341'
+            account_sid = 'Your_twilio_account_sid'
+            auth_token = 'Your_twilio_auth_token'
             client = Client(account_sid, auth_token)
             message = client.messages.create(from_='+15104220161',body='Somebody is trying to use your Laptop....Hurry Up!!!!',to='+917799549112')
             print(message.sid)
